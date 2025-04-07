@@ -115,7 +115,7 @@
             "extensions": {
                 "sap.ui.controllerExtensions": {
                     "sap.suite.ui.generic.template.ListReport.view.ListReport": {
-                        "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ListReportExtOverwrite",
+                        "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ListReportExt",
                         "sap.ui.generic.app": {
                             "zqmm_c_equipment_bc": {
                                 "EntitySet": "zqmm_c_equipment_bc",
@@ -123,13 +123,13 @@
                                     "barcodeSearch": {
                                         "id": "barcodeSearch",
                                         "text": "Barcode Search",
-                                        "press": "ca.gc.agr.equipbcodelr.ext.controller.ListReportExt.scanMe",
+                                        "press": "scanMe",
                                         "requiresSelection": false
                                     },
                                     "idCreateScan": {
                                         "id": "idCreateScanButton",
                                         "text": "Create New",
-                                        "press": "ca.gc.agr.equipbcodelr.ext.controller.ListReportExt.createScan",
+                                        "press": "createScan",
                                         "requiresSelection": false
                                     }
                                 }

@@ -9,7 +9,7 @@ sap.ui.define([
     "use strict";
 
   return { 
-  //    return ControllerExtension.extend("ca.gc.agr.equipbcodelr.ext.controller.ListReportExt",{
+//      return ControllerExtension.extend("ca.gc.agr.equipbcodelr.ext.controller.ListReportExt",{
   //     metadata: {
 	// 			methods: { 
 	// 				"onInit": {"public": true, "final": false, overrideExecution: OverrideExecution.After}
@@ -111,5 +111,5 @@ debugger;
               });
 
         }
-    };
-});
+      }});
+//  });
