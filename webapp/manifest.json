@@ -135,6 +135,24 @@
                                 }
                             }
                         }
+                    },
+                    "sap.suite.ui.generic.template.ObjectPage.view.Details": {
+                        "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ObjectPageExt",
+                        "sap.ui.generic.app": {
+                            "zqmm_c_equipment_bc": {
+                                "EntitySet": "zqmm_c_equipment_bc",
+                                "Header": {
+                                    "Actions": {
+                                        "EquipAudit": {
+                                            "id": "EquipAuditButton",
+                                            "text": "Audit Equipment",
+                                            "press": "EquipAudit",
+                                            "requiresSelection": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 },
                 "sap.ui.viewExtensions": {
