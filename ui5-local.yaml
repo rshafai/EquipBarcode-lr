@@ -44,7 +44,9 @@ server:
         mountPath: /
         services:
           - urlPath: /sap/opu/odata/sap/ZQMM_BARCODE_SRV
-            metadataPath: ./webapp/localService/metadata.xml
-            mockdataPath: ./webapp/localService/data
+            metadataPath: ./webapp/localService/mainService/metadata.xml
+            mockdataPath: ./webapp/localService/mainService/data
             generateMockData: true
-        annotations: []
+        annotations:
+          - localPath: ./webapp/localService/mainService/ZQMM_BARCODE_ANNO_MDL.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZQMM_BARCODE_ANNO_MDL',Version='0001')/$value/

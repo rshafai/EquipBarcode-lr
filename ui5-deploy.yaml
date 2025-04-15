@@ -24,3 +24,6 @@ builder:
           transport: DRXK901853
         exclude:
           - /test/
+        credentials:
+          username: env:XYZ_USER
+          password: env:XYZ_PASSWORD

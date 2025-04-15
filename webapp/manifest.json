@@ -1,235 +1,235 @@
 {
-    "_version": "1.48.0",
-    "sap.app": {
-        "id": "ca.gc.agr.equipbcodelr",
-        "type": "application",
-        "i18n": "i18n/i18n.properties",
-        "applicationVersion": {
-            "version": "0.0.1"
-        },
-        "title": "{{appTitle}}",
-        "description": "{{appDescription}}",
-        "resources": "resources.json",
-        "sourceTemplate": {
-            "id": "@sap/generator-fiori:lrop",
-            "version": "1.15.7",
-            "toolsId": "c2734948-f914-44af-8634-2a6251240566"
-        },
-        "dataSources": {
-            "mainService": {
-                "uri": "/sap/opu/odata/sap/ZQMM_BARCODE_SRV/",
-                "type": "OData",
-                "settings": {
-                    "annotations": [
-                        "ZQMM_BARCODE_ANNO_MDL",
-                        "annotation"
-                    ],
-                    "localUri": "localService/metadata.xml",
-                    "odataVersion": "2.0"
-                }
-            },
-            "ZQMM_BARCODE_ANNO_MDL": {
-                "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZQMM_BARCODE_ANNO_MDL',Version='0001')/$value/",
-                "type": "ODataAnnotation",
-                "settings": {
-                    "localUri": "localService/ZQMM_BARCODE_ANNO_MDL.xml"
-                }
-            },
-            "annotation": {
-                "type": "ODataAnnotation",
-                "uri": "annotations/annotation.xml",
-                "settings": {
-                    "localUri": "annotations/annotation.xml"
-                }
-            }
-        }
+  "_version": "1.48.0",
+  "sap.app": {
+    "id": "ca.gc.agr.equipbcodelr",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
     },
-    "sap.ui": {
-        "technology": "UI5",
-        "icons": {
-            "icon": "",
-            "favIcon": "",
-            "phone": "",
-            "phone@2": "",
-            "tablet": "",
-            "tablet@2": ""
-        },
-        "deviceTypes": {
-            "desktop": true,
-            "tablet": true,
-            "phone": true
-        }
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.15.7",
+      "toolsId": "c2734948-f914-44af-8634-2a6251240566"
     },
-    "sap.ui5": {
-        "flexEnabled": true,
-        "dependencies": {
-            "minUI5Version": "1.108.33",
-            "libs": {
-                "sap.m": {},
-                "sap.ui.core": {},
-                "sap.ushell": {},
-                "sap.f": {},
-                "sap.ui.comp": {},
-                "sap.ui.generic.app": {},
-                "sap.suite.ui.generic.template": {},
-                "sap.ndc": {}
-            }
-        },
-        "contentDensities": {
-            "compact": true,
-            "cozy": true
-        },
-        "models": {
-            "i18n": {
-                "type": "sap.ui.model.resource.ResourceModel",
-                "settings": {
-                    "bundleName": "ca.gc.agr.equipbcodelr.i18n.i18n"
-                }
-            },
-            "": {
-                "dataSource": "mainService",
-                "preload": true,
-                "settings": {
-                    "defaultBindingMode": "TwoWay",
-                    "defaultCountMode": "Inline",
-                    "refreshAfterChange": false,
-                    "metadataUrlParams": {
-                        "sap-value-list": "none"
-                    }
-                }
-            },
-            "@i18n": {
-                "type": "sap.ui.model.resource.ResourceModel",
-                "uri": "i18n/i18n.properties"
-            }
-        },
-        "resources": {
-            "css": []
-        },
-        "routing": {
-            "config": {},
-            "routes": [],
-            "targets": {}
-        },
-        "extends": {
-            "extensions": {
-                "sap.ui.controllerExtensions": {
-                    "sap.suite.ui.generic.template.ListReport.view.ListReport": {
-                        "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ListReportExt",
-                        "sap.ui.generic.app": {
-                            "zqmm_c_equipment_bc": {
-                                "EntitySet": "zqmm_c_equipment_bc",
-                                "Actions": {
-                                    "barcodeSearch": {
-                                        "id": "barcodeSearch",
-                                        "text": "Barcode Search",
-                                        "press": "scanMe",
-                                        "requiresSelection": false
-                                    },
-                                    "idCreateScan": {
-                                        "id": "idCreateScanButton",
-                                        "text": "Create New",
-                                        "press": "createScan",
-                                        "requiresSelection": false
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "sap.suite.ui.generic.template.ObjectPage.view.Details": {
-                        "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ObjectPageExt",
-                        "sap.ui.generic.app": {
-                            "zqmm_c_equipment_bc": {
-                                "EntitySet": "zqmm_c_equipment_bc",
-                                "Header": {
-                                    "Actions": {
-                                        "EquipAudit": {
-                                            "id": "EquipAuditButton",
-                                            "text": "Audit Equipment",
-                                            "press": "EquipAudit",
-                                            "requiresSelection": false
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "sap.ui.viewExtensions": {
-                    "sap.suite.ui.generic.template.ListReport.view.ListReport": {
-                        "BarcodeScanExt|zqmm_c_equipment_bc": {
-                            "className": "sap.ui.core.Fragment",
-                            "fragmentName": "ca.gc.agr.equipbcodelr.ext.fragments.BarcodeScanExt",
-                            "type": "XML"
-                        }
-                    }
-                }
-            }
-        }
-    },
-    "sap.ui.generic.app": {
-        "_version": "1.3.0",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZQMM_BARCODE_SRV/",
+        "type": "OData",
         "settings": {
-            "forceGlobalRefresh": false,
-            "objectPageHeaderType": "Dynamic",
-            "considerAnalyticalParameters": true,
-            "showDraftToggle": false
+          "annotations": [
+            "ZQMM_BARCODE_ANNO_MDL",
+            "annotation"
+          ],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      },
+      "ZQMM_BARCODE_ANNO_MDL": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZQMM_BARCODE_ANNO_MDL',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/ZQMM_BARCODE_ANNO_MDL.xml"
+        }
+      },
+      "annotation": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation.xml",
+        "settings": {
+          "localUri": "annotations/annotation.xml"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.108.33",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ushell": {},
+        "sap.f": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ndc": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ca.gc.agr.equipbcodelr.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false,
+          "metadataUrlParams": {
+            "sap-value-list": "none"
+          }
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [],
+      "targets": {}
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+            "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ListReportExt",
+            "sap.ui.generic.app": {
+              "zqmm_c_equipment_bc": {
+                "EntitySet": "zqmm_c_equipment_bc",
+                "Actions": {
+                  "barcodeSearch": {
+                    "id": "barcodeSearch",
+                    "text": "Barcode Search",
+                    "press": "scanMe",
+                    "requiresSelection": false
+                  },
+                  "idCreateScan": {
+                    "id": "idCreateScanButton",
+                    "text": "Create New",
+                    "press": "createScan",
+                    "requiresSelection": false
+                  }
+                }
+              }
+            }
+          },
+          "sap.suite.ui.generic.template.ObjectPage.view.Details": {
+            "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ObjectPageExt",
+            "sap.ui.generic.app": {
+              "zqmm_c_equipment_bc": {
+                "EntitySet": "zqmm_c_equipment_bc",
+                "Header": {
+                  "Actions": {
+                    "EquipAudit": {
+                      "id": "EquipAuditButton",
+                      "text": "Audit Equipment",
+                      "press": "EquipAudit",
+                      "requiresSelection": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sap.ui.viewExtensions": {
+          "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+            "BarcodeScanExt|zqmm_c_equipment_bc": {
+              "className": "sap.ui.core.Fragment",
+              "fragmentName": "ca.gc.agr.equipbcodelr.ext.fragments.BarcodeScanExt",
+              "type": "XML"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.ui.generic.app": {
+    "_version": "1.3.0",
+    "settings": {
+      "forceGlobalRefresh": false,
+      "objectPageHeaderType": "Dynamic",
+      "considerAnalyticalParameters": true,
+      "showDraftToggle": false
+    },
+    "pages": {
+      "ListReport|zqmm_c_equipment_bc": {
+        "entitySet": "zqmm_c_equipment_bc",
+        "component": {
+          "name": "sap.suite.ui.generic.template.ListReport",
+          "list": true,
+          "settings": {
+            "condensedTableLayout": false,
+            "smartVariantManagement": true,
+            "enableTableFilterInPageVariant": true,
+            "filterSettings": {
+              "dateSettings": {
+                "useDateRange": true
+              }
+            },
+            "quickVariantSelection": {
+              "showCounts": true,
+              "variants": {
+                "0": {
+                  "key": "_tab0",
+                  "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#catLow"
+                },
+                "1": {
+                  "key": "_tab1",
+                  "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#catGeneral"
+                },
+                "2": {
+                  "key": "_tab2",
+                  "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#catCapital"
+                }
+              }
+            },
+            "tableSettings": {
+              "type": "",
+              "inlineDelete": false
+            },
+            "dataLoadSettings": {
+              "loadDataOnAppLaunch": "always"
+            }
+          }
         },
         "pages": {
-            "ListReport|zqmm_c_equipment_bc": {
-                "entitySet": "zqmm_c_equipment_bc",
-                "component": {
-                    "name": "sap.suite.ui.generic.template.ListReport",
-                    "list": true,
-                    "settings": {
-                        "condensedTableLayout": false,
-                        "smartVariantManagement": true,
-                        "enableTableFilterInPageVariant": true,
-                        "filterSettings": {
-                            "dateSettings": {
-                                "useDateRange": true
-                            }
-                        },
-                        "quickVariantSelection": {
-                            "showCounts": true,
-                            "variants": {
-                                "0": {
-                                    "key": "_tab0",
-                                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#catLow"
-                                },
-                                "1": {
-                                    "key": "_tab1",
-                                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#catGeneral"
-                                },
-                                "2": {
-                                    "key": "_tab2",
-                                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#catCapital"
-                                }
-                            }
-                        },
-                        "tableSettings": {
-                            "type": "",
-                            "inlineDelete": false
-                        },
-                        "dataLoadSettings": {
-                            "loadDataOnAppLaunch": "always"
-                        }
-                    }
-                },
-                "pages": {
-                    "ObjectPage|zqmm_c_equipment_bc": {
-                        "entitySet": "zqmm_c_equipment_bc",
-                        "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
-                        "component": {
-                            "name": "sap.suite.ui.generic.template.ObjectPage"
-                        }
-                    }
-                }
+          "ObjectPage|zqmm_c_equipment_bc": {
+            "entitySet": "zqmm_c_equipment_bc",
+            "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
+            "component": {
+              "name": "sap.suite.ui.generic.template.ObjectPage"
             }
+          }
         }
-    },
-    "sap.fiori": {
-        "registrationIds": [],
-        "archeType": "transactional"
+      }
     }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
 }

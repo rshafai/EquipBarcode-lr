@@ -9,7 +9,22 @@ sap.ui.define([
     'use strict';
 
     return {
+        onAuditCancel: function(oEvent){
+            this._oAuditDialog.close();
+        },
         EquipAudit: function (oEvent) {
+            //RSH - Apr 15
+            if (!this._oAuditDialog) {
+				this._oAuditDialog = this.loadFragment({ name: "ca.gc.agr.equipbcodelr.ext.fragment.AuditForm" 
+				}).then(function(oDialog){
+					oDialog.open();
+					this._oAuditDialog = oDialog;
+				}.bind(this));
+			} else {
+				//this._rebindFaveTemplatesTable();
+				this._oAuditDialog.open();
+			}
+return;            
             const oContext = oEvent.getSource().getBindingContext();
             const oData = oContext.getObject();
             const oModel = oContext.getModel();

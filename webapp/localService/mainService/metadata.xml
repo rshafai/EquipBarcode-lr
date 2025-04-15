@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Measures.V1" Alias="Measures"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://virtualdrx:44303/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
     </edmx:Reference>
     <edmx:DataServices m:DataServiceVersion="2.0">
         <Schema Namespace="ZQMM_BARCODE_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
             <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <EntityType Name="I_CostCenterStdVHType" sap:label="Cost Center" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ControllingArea"/>
+                    <PropertyRef Name="CostCenter"/>
+                    <PropertyRef Name="ValidityEndDate"/>
+                </Key>
+                <Property Name="ControllingArea" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Controlling Area"/>
+                <Property Name="CostCenter" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="CostCenter_Text" sap:label="Cost Center"/>
+                <Property Name="CostCenter_Text" Type="Edm.String" MaxLength="20" sap:label="Cost Center Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ValidityEndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:label="Valid To" sap:quickinfo="Valid To Date"/>
+                <Property Name="ValidityStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid From" sap:quickinfo="Valid-From Date"/>
+            </EntityType>
             <EntityType Name="I_CurrencyType" sap:label="Currency" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="Currency"/>
@@ -125,6 +137,23 @@
                 <Property Name="EquipmentCategory_Text" Type="Edm.String" MaxLength="30" sap:label="Equipment CatDesc." sap:quickinfo="Equipment category description" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="IsUtilitiesData" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="IS-U" sap:quickinfo="IS-U data"/>
             </EntityType>
+            <EntityType Name="I_FunctionalLocationStdVHType" sap:label="Functional Location" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="FunctionalLocation"/>
+                </Key>
+                <Property Name="FunctionalLocation" Type="Edm.String" Nullable="false" MaxLength="40" sap:display-format="UpperCase" sap:text="FunctionalLocation_Text" sap:label="Functional Location"/>
+                <Property Name="FunctionalLocation_Text" Type="Edm.String" MaxLength="40" sap:label="Description" sap:quickinfo="Description of functional location" sap:creatable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="I_LocationType" sap:label="Location" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Location"/>
+                    <PropertyRef Name="Plant"/>
+                </Key>
+                <Property Name="Location" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="LocationName" sap:label="Location"/>
+                <Property Name="Plant" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Plant"/>
+                <Property Name="AddressID" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Address Number"/>
+                <Property Name="LocationName" Type="Edm.String" MaxLength="40" sap:label="Location Name"/>
+            </EntityType>
             <EntityType Name="I_MaterialType" sap:label="Material" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="Material"/>
@@ -168,6 +197,13 @@
                 <Property Name="Division" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Int.co billing div." sap:quickinfo="Division for intercompany billing"/>
                 <Property Name="Language" Type="Edm.String" MaxLength="2" sap:label="Language Key"/>
                 <Property Name="IsMarkedForArchiving" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Archiving flag" sap:quickinfo="Central archiving marker for master record"/>
+            </EntityType>
+            <EntityType Name="I_PlantStdVHType" sap:label="Plant Std VH" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Plant"/>
+                </Key>
+                <Property Name="Plant" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:text="PlantName" sap:label="Plant"/>
+                <Property Name="PlantName" Type="Edm.String" MaxLength="30" sap:label="Plant Name"/>
             </EntityType>
             <EntityType Name="I_StatusObjectStatusType" sap:label="Status Object Status" sap:content-version="1">
                 <Key>
@@ -322,55 +358,120 @@
                 <Key>
                     <PropertyRef Name="Equipment"/>
                 </Key>
-                <Property Name="Equipment" Type="Edm.String" Nullable="false" MaxLength="18" sap:display-format="UpperCase" sap:label="Equipment" sap:quickinfo="Equipment Number"/>
+                <Property Name="Equipment" Type="Edm.String" Nullable="false" MaxLength="18" sap:display-format="UpperCase" sap:text="EquipmentName" sap:label="Equipment" sap:quickinfo="Equipment Number"/>
                 <Property Name="EquipmentTrim" Type="Edm.String" MaxLength="18" sap:label="Asset No."/>
-                <Property Name="EquipmentName" Type="Edm.String" MaxLength="40" sap:label="Equipment Description" sap:quickinfo="Description of technical object"/>
+                <Property Name="EquipmentName" Type="Edm.String" MaxLength="40" sap:label="Description" sap:quickinfo="Description of technical object"/>
                 <Property Name="EquipmentCategory" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:text="EquipmentCategoryDesc" sap:label="Category" sap:quickinfo="Equipment category" sap:value-list="standard"/>
-                <Property Name="EquipmentCategoryDesc" Type="Edm.String" MaxLength="30" sap:label="Cat Desc" sap:quickinfo="Equipment category description"/>
+                <Property Name="EquipmentCategoryDesc" Type="Edm.String" MaxLength="30" sap:label="Equipment CatDesc." sap:quickinfo="Equipment category description"/>
+                <Property Name="EquipmentImageUrl" Type="Edm.String" MaxLength="100"/>
                 <Property Name="TechnicalObjectType" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="TechnicalObjectTypeDesc" sap:label="Object Type" sap:quickinfo="Type of Technical Object" sap:value-list="standard"/>
                 <Property Name="TechnicalObjectTypeDesc" Type="Edm.String" MaxLength="20" sap:label="Object type text" sap:quickinfo="Text for Object Type"/>
-                <Property Name="Plant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Plant" sap:value-list="standard"/>
-                <Property Name="Division" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Division" sap:value-list="standard"/>
+                <Property Name="Plant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:text="to_Plant/PlantName" sap:label="Plant" sap:value-list="standard"/>
+                <Property Name="Division" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:text="to_Division/Division_Text" sap:label="Division" sap:value-list="standard"/>
                 <Property Name="DivisionName" Type="Edm.String" MaxLength="20" sap:label="Division Description"/>
-                <Property Name="StorageLocation" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Storage Location" sap:value-list="standard"/>
+                <Property Name="StorageLocation" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:text="to_StorageLocation/StorageLocationName" sap:label="Storage Location" sap:value-list="standard"/>
                 <Property Name="StorageLocationName" Type="Edm.String" MaxLength="16" sap:label="Storage Loc. Name" sap:quickinfo="Storage Location Name"/>
                 <Property Name="Material" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:text="MaterialName" sap:label="Material" sap:quickinfo="Material Number" sap:value-list="standard"/>
-                <Property Name="MaterialName" Type="Edm.String" MaxLength="40" sap:label="Material Name" sap:quickinfo="Material Description"/>
+                <Property Name="MaterialName" Type="Edm.String" MaxLength="40" sap:label="Material Description"/>
                 <Property Name="MaintObjectInternalID" Type="Edm.String" MaxLength="22" sap:display-format="UpperCase" sap:label="Object number"/>
-                <Property Name="Customer" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Current customer" sap:quickinfo="Customer to Whom Serial Number was Delivered" sap:value-list="standard"/>
-                <Property Name="CustomerName" Type="Edm.String" MaxLength="80" sap:label="Customer" sap:quickinfo="Name of Customer"/>
-                <Property Name="Supplier" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Vendor" sap:quickinfo="Vendor number" sap:value-list="standard"/>
-                <Property Name="SupplierName" Type="Edm.String" MaxLength="80" sap:label="Supplier" sap:quickinfo="Name of Supplier"/>
+                <Property Name="Customer" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="to_Customer/CustomerName" sap:label="Current customer" sap:quickinfo="Customer to Whom Serial Number was Delivered" sap:value-list="standard"/>
+                <Property Name="CustomerName" Type="Edm.String" MaxLength="80" sap:label="Name of Customer"/>
+                <Property Name="Supplier" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="to_Supplier/SupplierName" sap:label="Vendor" sap:quickinfo="Vendor number" sap:value-list="standard"/>
+                <Property Name="SupplierName" Type="Edm.String" MaxLength="80" sap:label="Name of Supplier"/>
                 <Property Name="OperationStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Start-up date" sap:quickinfo="Start-up Date of the Technical Object"/>
                 <Property Name="HasEquipmentData" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="EquipmentData exists" sap:quickinfo="Equipment data exists"/>
                 <Property Name="CreatedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:text="CreatedByName" sap:label="Created By" sap:quickinfo="Name of Person Responsible for Creating the Object"/>
-                <Property Name="CreatedByName" Type="Edm.String" MaxLength="80" sap:label="Created By" sap:quickinfo="User Description"/>
+                <Property Name="CreatedByName" Type="Edm.String" MaxLength="80" sap:label="Created By Name" sap:quickinfo="Full Name of Person"/>
                 <Property Name="CreationDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Created On" sap:quickinfo="Record Created On"/>
                 <Property Name="LastChangedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:text="ChangedByName" sap:label="Last Changed By" sap:quickinfo="Name of Person Who Changed Object"/>
-                <Property Name="ChangedByName" Type="Edm.String" MaxLength="80" sap:label="Last Changed By" sap:quickinfo="User Description"/>
+                <Property Name="ChangedByName" Type="Edm.String" MaxLength="80" sap:label="Full Name" sap:quickinfo="Full Name of Person"/>
                 <Property Name="LastChangeDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Last Changes On" sap:quickinfo="Last Changed On"/>
                 <Property Name="AcquisitionDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Acquisition Date" sap:quickinfo="Acquisition date"/>
                 <Property Name="Currency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:quickinfo="Currency Key" sap:semantics="currency-code"/>
                 <Property Name="AcquisitionValue" Type="Edm.Decimal" Precision="14" Scale="3" sap:unit="Currency" sap:label="Acquisition Value"/>
                 <Property Name="Manufacturer" Type="Edm.String" MaxLength="30" sap:label="Manufacturer" sap:quickinfo="Manufacturer of Asset"/>
                 <Property Name="ModelNumber" Type="Edm.String" MaxLength="20" sap:label="Model #" sap:quickinfo="Manufacturer model number"/>
-                <Property Name="ManufacturerCountry" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Country of Mfg" sap:quickinfo="Country of manufacture"/>
-                <Property Name="AAFCAssetNumber" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:label="Asset #" sap:quickinfo="Serial Number"/>
+                <Property Name="ManufacturerCountry" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Country of Manufact." sap:quickinfo="Country of manufacture"/>
                 <Property Name="ManufacturerSerialNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="S/N #" sap:quickinfo="Manufacturer serial number"/>
-                <Property Name="GrossWeight" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="GrossWeightUnit" sap:label="Gross Weight" sap:quickinfo="Weight of object"/>
-                <Property Name="GrossWeightUnit" Type="Edm.String" MaxLength="3" sap:label="Uom" sap:quickinfo="Unit of weight" sap:semantics="unit-of-measure"/>
-                <Property Name="SizeOrDimensionText" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:label="Side/Dim." sap:quickinfo="Size/dimension"/>
-                <Property Name="Url" Type="Edm.String"/>
-                <Property Name="QvTitle" Type="Edm.String"/>
-                <Property Name="Address" Type="Edm.String"/>
+                <Property Name="GrossWeight" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="GrossWeightUnit" sap:label="Weight of object"/>
+                <Property Name="GrossWeightUnit" Type="Edm.String" MaxLength="3" sap:label="Unit of weight" sap:semantics="unit-of-measure"/>
+                <Property Name="SizeOrDimensionText" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:label="Purchase Doc" sap:quickinfo="Size/dimension"/>
+                <Property Name="FunctionalLocation" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:text="FunctionalLocationName" sap:label="Functional Location" sap:value-list="standard"/>
+                <Property Name="FunctionalLocationName" Type="Edm.String" MaxLength="40" sap:label="Description" sap:quickinfo="Description of functional location"/>
+                <Property Name="CostCenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="CostCenterName" sap:label="Cost Center" sap:value-list="standard"/>
+                <Property Name="CostCenterName" Type="Edm.String" MaxLength="20" sap:label="Cost Center Name"/>
+                <Property Name="MaintPlant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:text="PlantName" sap:label="Maintenance Plant" sap:value-list="standard"/>
+                <Property Name="PlantName" Type="Edm.String" MaxLength="30" sap:label="Plant Name"/>
+                <Property Name="Location" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="LocationName" sap:label="Location" sap:quickinfo="Location of maintenance object" sap:value-list="standard"/>
+                <Property Name="LocationName" Type="Edm.String" MaxLength="40" sap:label="Location Name"/>
+                <Property Name="SortField" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Sort Field"/>
+                <Property Name="BarcodeUrl" Type="Edm.String"/>
+                <Property Name="BarcodeTitle" Type="Edm.String"/>
+                <Property Name="BarcodeAddress" Type="Edm.String"/>
+                <Property Name="Barcode" Type="Edm.String"/>
+                <Property Name="StatusCode" Type="Edm.String" MaxLength="50" sap:text="StatusName" sap:label="Status"/>
+                <Property Name="StatusName" Type="Edm.String" MaxLength="50"/>
+                <Property Name="StatusCriticality" Type="Edm.Byte"/>
+                <Property Name="BarcodeRoom" Type="Edm.String" MaxLength="8" sap:display-format="UpperCase" sap:label="Room"/>
+                <Property Name="BarcodeAuditedRoom" Type="Edm.String" MaxLength="8" sap:display-format="UpperCase" sap:label="Room"/>
+                <Property Name="BarcodeSortField" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Sort Field"/>
+                <Property Name="BarcodeCostCenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Cost Center"/>
+                <Property Name="BarcodeSerialNumber" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:label="Serial Number"/>
+                <Property Name="BarcodeAuditedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="User Name"/>
+                <Property Name="BarcodeAuditedDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date"/>
+                <Property Name="BarcodeAuditorComments" Type="Edm.String"/>
+                <Property Name="BarcodeUserField1" Type="Edm.String"/>
+                <Property Name="BarcodeUserField2" Type="Edm.String"/>
+                <Property Name="BarcodeUserField3" Type="Edm.String"/>
+                <NavigationProperty Name="to_AuditHist" Relationship="ZQMM_BARCODE_SRV.assoc_3900BB92595748F7188E2B9F65EDE70A" FromRole="FromRole_assoc_3900BB92595748F7188E2B9F65EDE70A" ToRole="ToRole_assoc_3900BB92595748F7188E2B9F65EDE70A"/>
             </EntityType>
+            <EntityType Name="zqmm_i_eq_audit_historyType" sap:label="Equipment audit history" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Guid"/>
+                </Key>
+                <Property Name="Guid" Type="Edm.Guid" Nullable="false" sap:label="GUID" sap:quickinfo="Globally Unique Identifier"/>
+                <Property Name="Equnr" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:text="EquipmentName" sap:label="Equipment" sap:quickinfo="Equipment Number"/>
+                <Property Name="EquipmentName" Type="Edm.String" MaxLength="40" sap:label="Object Description" sap:quickinfo="Description of technical object"/>
+                <Property Name="AuditTimestamp" Type="Edm.DateTimeOffset" Precision="0" sap:label="Auditted On" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+                <Property Name="Auditor" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:text="AuditorName" sap:label="User Name"/>
+                <Property Name="AuditorName" Type="Edm.String" MaxLength="80" sap:label="Full Name" sap:quickinfo="Full Name of Person"/>
+                <Property Name="AuditFloc" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:text="FunctionalLocationName" sap:label="Functional Location" sap:value-list="standard"/>
+                <Property Name="FunctionalLocationName" Type="Edm.String" MaxLength="40" sap:label="FunctLocDescrip." sap:quickinfo="Description of functional location"/>
+                <Property Name="AuditMaintPlant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:text="PlantName" sap:label="Maintenance Plant" sap:value-list="standard"/>
+                <Property Name="PlantName" Type="Edm.String" MaxLength="30" sap:label="Plant Name"/>
+                <Property Name="AuditLocation" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="LocationName" sap:label="Location" sap:quickinfo="Asset location" sap:value-list="standard"/>
+                <Property Name="LocationName" Type="Edm.String" MaxLength="40" sap:label="Location Name"/>
+                <Property Name="AuditCostcenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="CostCenterName" sap:label="Cost Center" sap:value-list="standard"/>
+                <Property Name="CostCenterName" Type="Edm.String" MaxLength="20" sap:label="Cost Center Name"/>
+                <Property Name="AuditRoom" Type="Edm.String" MaxLength="8" sap:display-format="UpperCase" sap:label="Room"/>
+                <Property Name="AuditSort" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Sort Field"/>
+                <Property Name="AuditManSerialno" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:label="Mfg Serial #" sap:quickinfo="Serial Number"/>
+                <Property Name="OrigFloc" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Functional Location"/>
+                <Property Name="OrigLocation" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Location" sap:quickinfo="Asset location"/>
+                <Property Name="OrigRoom" Type="Edm.String" MaxLength="8" sap:display-format="UpperCase" sap:label="Room"/>
+                <Property Name="OrigSort" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Sort Field"/>
+                <Property Name="OrigCostcenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Cost Center"/>
+                <Property Name="OrigManSerialno" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:label="Serial Number"/>
+                <Property Name="AuditorComments" Type="Edm.String" sap:label="Comments"/>
+                <Property Name="UserField1" Type="Edm.String"/>
+                <Property Name="UserField2" Type="Edm.String"/>
+                <Property Name="UserField3" Type="Edm.String"/>
+            </EntityType>
+            <Association Name="assoc_3900BB92595748F7188E2B9F65EDE70A" sap:content-version="1">
+                <End Type="ZQMM_BARCODE_SRV.zqmm_c_equipment_bcType" Multiplicity="1" Role="FromRole_assoc_3900BB92595748F7188E2B9F65EDE70A"/>
+                <End Type="ZQMM_BARCODE_SRV.zqmm_i_eq_audit_historyType" Multiplicity="*" Role="ToRole_assoc_3900BB92595748F7188E2B9F65EDE70A"/>
+            </Association>
             <EntityContainer Name="ZQMM_BARCODE_SRV_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="I_CostCenterStdVH" EntityType="ZQMM_BARCODE_SRV.I_CostCenterStdVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_Currency" EntityType="ZQMM_BARCODE_SRV.I_CurrencyType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_Customer" EntityType="ZQMM_BARCODE_SRV.I_CustomerType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
                 <EntitySet Name="I_Division" EntityType="ZQMM_BARCODE_SRV.I_DivisionType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_EquipmentCategory" EntityType="ZQMM_BARCODE_SRV.I_EquipmentCategoryType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="I_FunctionalLocationStdVH" EntityType="ZQMM_BARCODE_SRV.I_FunctionalLocationStdVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
+                <EntitySet Name="I_Location" EntityType="ZQMM_BARCODE_SRV.I_LocationType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="I_Material" EntityType="ZQMM_BARCODE_SRV.I_MaterialType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_Plant" EntityType="ZQMM_BARCODE_SRV.I_PlantType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
+                <EntitySet Name="I_PlantStdVH" EntityType="ZQMM_BARCODE_SRV.I_PlantStdVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_StatusObjectStatus" EntityType="ZQMM_BARCODE_SRV.I_StatusObjectStatusType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="I_StorageLocation" EntityType="ZQMM_BARCODE_SRV.I_StorageLocationType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_Supplier" EntityType="ZQMM_BARCODE_SRV.I_SupplierType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
@@ -378,6 +479,11 @@
                 <EntitySet Name="I_UnitOfMeasure" EntityType="ZQMM_BARCODE_SRV.I_UnitOfMeasureType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_User" EntityType="ZQMM_BARCODE_SRV.I_UserType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="zqmm_c_equipment_bc" EntityType="ZQMM_BARCODE_SRV.zqmm_c_equipment_bcType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
+                <EntitySet Name="zqmm_i_eq_audit_history" EntityType="ZQMM_BARCODE_SRV.zqmm_i_eq_audit_historyType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <AssociationSet Name="assoc_3900BB92595748F7188E2B9F65EDE70A" Association="ZQMM_BARCODE_SRV.assoc_3900BB92595748F7188E2B9F65EDE70A" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="zqmm_c_equipment_bc" Role="FromRole_assoc_3900BB92595748F7188E2B9F65EDE70A"/>
+                    <End EntitySet="zqmm_i_eq_audit_history" Role="ToRole_assoc_3900BB92595748F7188E2B9F65EDE70A"/>
+                </AssociationSet>
             </EntityContainer>
             <Annotations Target="ZQMM_BARCODE_SRV.zqmm_c_equipment_bcType/EquipmentCategory" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
@@ -1062,6 +1168,155 @@
                     </Record>
                 </Annotation>
             </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.zqmm_c_equipment_bcType/FunctionalLocation" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Functional Location"/>
+                        <PropertyValue Property="CollectionPath" String="I_FunctionalLocationStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="FunctionalLocation"/>
+                                    <PropertyValue Property="ValueListProperty" String="FunctionalLocation"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="FunctionalLocation_Text"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.zqmm_c_equipment_bcType/CostCenter" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Cost Center"/>
+                        <PropertyValue Property="CollectionPath" String="I_CostCenterStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="ControllingArea"/>
+                                    <PropertyValue Property="ValueListProperty" String="ControllingArea"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CostCenter"/>
+                                    <PropertyValue Property="ValueListProperty" String="CostCenter"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CostCenter_Text"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="ValidityEndDate"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="ValidityStartDate"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.zqmm_c_equipment_bcType/MaintPlant" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Plant Std VH"/>
+                        <PropertyValue Property="CollectionPath" String="I_PlantStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="MaintPlant"/>
+                                    <PropertyValue Property="ValueListProperty" String="Plant"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="PlantName"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.zqmm_i_eq_audit_historyType/AuditFloc" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Functional Location"/>
+                        <PropertyValue Property="CollectionPath" String="I_FunctionalLocationStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="AuditFloc"/>
+                                    <PropertyValue Property="ValueListProperty" String="Floc"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="FunctionalLocation"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="FunctionalLocation_Text"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.zqmm_i_eq_audit_historyType/AuditMaintPlant" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Plant Std VH"/>
+                        <PropertyValue Property="CollectionPath" String="I_PlantStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="AuditMaintPlant"/>
+                                    <PropertyValue Property="ValueListProperty" String="MaintPlant"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Plant"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="PlantName"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.zqmm_i_eq_audit_historyType/AuditCostcenter" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Cost Center"/>
+                        <PropertyValue Property="CollectionPath" String="I_CostCenterStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="AuditCostcenter"/>
+                                    <PropertyValue Property="ValueListProperty" String="AuditCostcenter"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="ControllingArea"/>
+                                    <PropertyValue Property="ValueListProperty" String="ControllingArea"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CostCenter"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CostCenter_Text"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="ValidityEndDate"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="ValidityStartDate"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
             <Annotations Target="ZQMM_BARCODE_SRV.ZQMM_BARCODE_SRV_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
                 <Annotation Term="Aggregation.ApplySupported">
@@ -1083,15 +1338,35 @@
                         <PropertyValue Property="FilterExpressionRestrictions">
                             <Collection>
                                 <Record>
-                                    <PropertyValue Property="Property" PropertyPath="Url"/>
+                                    <PropertyValue Property="Property" PropertyPath="BarcodeUrl"/>
                                     <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
                                 </Record>
                                 <Record>
-                                    <PropertyValue Property="Property" PropertyPath="QvTitle"/>
+                                    <PropertyValue Property="Property" PropertyPath="BarcodeTitle"/>
                                     <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
                                 </Record>
                                 <Record>
-                                    <PropertyValue Property="Property" PropertyPath="Address"/>
+                                    <PropertyValue Property="Property" PropertyPath="BarcodeAddress"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="Barcode"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="BarcodeAuditorComments"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="BarcodeUserField1"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="BarcodeUserField2"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="BarcodeUserField3"/>
                                     <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
                                 </Record>
                             </Collection>
@@ -1102,12 +1377,63 @@
                     <Record>
                         <PropertyValue Property="NonSortableProperties">
                             <Collection>
-                                <PropertyPath>Url</PropertyPath>
-                                <PropertyPath>QvTitle</PropertyPath>
-                                <PropertyPath>Address</PropertyPath>
+                                <PropertyPath>BarcodeUrl</PropertyPath>
+                                <PropertyPath>BarcodeTitle</PropertyPath>
+                                <PropertyPath>BarcodeAddress</PropertyPath>
+                                <PropertyPath>Barcode</PropertyPath>
+                                <PropertyPath>BarcodeAuditorComments</PropertyPath>
+                                <PropertyPath>BarcodeUserField1</PropertyPath>
+                                <PropertyPath>BarcodeUserField2</PropertyPath>
+                                <PropertyPath>BarcodeUserField3</PropertyPath>
                             </Collection>
                         </PropertyValue>
                     </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.ZQMM_BARCODE_SRV_Entities/zqmm_i_eq_audit_history" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="FilterExpressionRestrictions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="AuditorComments"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="UserField1"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="UserField2"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="UserField3"/>
+                                    <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>AuditorComments</PropertyPath>
+                                <PropertyPath>UserField1</PropertyPath>
+                                <PropertyPath>UserField2</PropertyPath>
+                                <PropertyPath>UserField3</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZQMM_BARCODE_SRV.I_LocationType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.SemanticKey">
+                    <Collection>
+                        <PropertyPath>Plant</PropertyPath>
+                        <PropertyPath>Location</PropertyPath>
+                    </Collection>
                 </Annotation>
             </Annotations>
             <Annotations Target="ZQMM_BARCODE_SRV.I_CurrencyType/Currency" xmlns="http://docs.oasis-open.org/odata/ns/edm">
@@ -1116,8 +1442,8 @@
             <Annotations Target="ZQMM_BARCODE_SRV.I_UnitOfMeasureType/UnitOfMeasure" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.UnitSpecificScale" Path="UnitOfMeasureDspNmbrOfDcmls"/>
             </Annotations>
-            <atom:link rel="self" href="https://virtualdrx:44303/sap/opu/odata/sap/ZQMM_BARCODE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
-            <atom:link rel="latest-version" href="https://virtualdrx:44303/sap/opu/odata/sap/ZQMM_BARCODE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="self" href="/sap/opu/odata/sap/ZQMM_BARCODE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="/sap/opu/odata/sap/ZQMM_BARCODE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
