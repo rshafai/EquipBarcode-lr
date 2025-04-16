@@ -24,7 +24,7 @@ sap.ui.define([
         
   //     },
         scanMe: function(oEvent) {
-            MessageToast.show("Custom handler invoked.");
+            MessageToast.show("Barcode scanned successfully");
 
             BarcodeScanner.scan(
               function (mResult) {
@@ -72,9 +72,8 @@ sap.ui.define([
         },
         
         createScan: function(oEvent) {
-          MessageToast.show("Calling external API. Keep your pantyhose on ...");
+          MessageToast.show("Calling external API. Please wait ...");
 
-debugger;
           var model = new JSONModel();
           this.getView().setModel(model, "barcode")
 

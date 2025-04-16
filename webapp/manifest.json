@@ -188,6 +188,7 @@
             "filterSettings": {
               "dateSettings": {
                 "useDateRange": true
+                
               }
             },
             "quickVariantSelection": {
@@ -221,7 +222,16 @@
             "entitySet": "zqmm_c_equipment_bc",
             "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
             "component": {
-              "name": "sap.suite.ui.generic.template.ObjectPage"
+              "name": "sap.suite.ui.generic.template.ObjectPage",
+              "settings": {
+                "sections": {
+                  "AuditHistoryTable": {
+                    "tableSettings": {
+                      "selectionLimit": 0
+                    }
+                  }
+                }
+              }
             }
           }
         }

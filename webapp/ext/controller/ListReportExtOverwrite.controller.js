@@ -9,6 +9,7 @@ sap.ui.define([
       override:{
         onInit: function(oEvent){
 debugger;
+          this.getView().byId("id--listReportFilter").setShowClearOnFB(true);
         },
         onPendingFilters: function() {
           var oTable = this.getView().byId("BusinessPartners::BusinessPartnersList--fe::CustomTab::tab2--customViewWithTable");
