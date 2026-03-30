@@ -99,7 +99,7 @@ return;
                     text: "Save",
                     type: "Emphasized",
                     press: function () {
-                        const sPath = oContext.getPath(); //  Equipment Number from CDS - Example: /ZQMM_C_EQUIPMENT_BC('100855')
+                        const sPath = oContext.getPath(); //  Equipment Number from CDS - Example: /ZQMM_C_EQ_Barcode('100855')
                         const updatedData = {};
 
                         function setField(fieldName, control, isDate = false) {

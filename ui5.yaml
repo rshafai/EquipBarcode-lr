@@ -17,9 +17,10 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /sap
-            url: http://virtualdrx:44303
-            client: '100'
-            destination: DRX
+            url: https://dr1pas01.agr.gc.ca:44318/
+            destination: DR1_050
+    #            url: https://drxpas01.agr.gc.ca:44322/
+    #            destination: DRX_100
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:

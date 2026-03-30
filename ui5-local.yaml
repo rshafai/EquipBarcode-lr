@@ -35,9 +35,9 @@ server:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
           - path: /sap
-            url: http://virtualdrx:44303
-            client: '100'
-            destination: DRX
+            url: https://dr1pas01.agr.gc.ca:44318/
+            client: '050'
+            destination: DR1_050
     - name: sap-fe-mockserver
       beforeMiddleware: csp
       configuration:

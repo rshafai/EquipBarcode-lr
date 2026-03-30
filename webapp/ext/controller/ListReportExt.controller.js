@@ -52,7 +52,7 @@ sap.ui.define([
                 MessageToast.show("Scan cancelled", { duration:1000 });
             } else {
                 var sBarCode = mResult.text; //oEvent.getParameter("text") || '';
-                var oFilterBar = this.byId("ca.gc.agr.equipbcodelr::sap.suite.ui.generic.template.ListReport.view.ListReport::zqmm_c_equipment_bc--listReportFilter"); //this.byId("worklistFilterBar");
+                var oFilterBar = this.byId("ca.gc.agr.equipbcodelr::sap.suite.ui.generic.template.ListReport.view.ListReport::ZQMM_C_EQ_Barcode--listReportFilter"); //this.byId("worklistFilterBar");
                 var oFilterData = oFilterBar.getFilterData();
 
                 oFilterData.EquipmentTrim = {

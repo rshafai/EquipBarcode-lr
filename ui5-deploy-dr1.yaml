@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: ca.gc.agr.equipbcodelr
+  name: ca.gc.agr.i2pcheckinreport
 type: application
 builder:
   resources:
@@ -14,12 +14,16 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
+          destination: DR1_025
           url: https://dr1pas01.agr.gc.ca:44318/
           client: '025'
         app:
-          name: ZQMM_EQ_AUDIT
+          name: ZQMM_EQ_BARCODE
           description: Equipment Barcode Prototype
           package: ZQMM_EQ_AUDIT
           transport: DR1K910531
         exclude:
           - /test/
+        credentials:
+          username: env:XYZ_USER
+          password: env:XYZ_PASSWORD

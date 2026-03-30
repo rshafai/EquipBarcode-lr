@@ -17,22 +17,22 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/sap/opu/odata/sap/ZQMM_BARCODE_SRV/",
+        "uri": "/sap/opu/odata/sap/ZQMM_C_EQ_BARCODE_UI2/",
         "type": "OData",
         "settings": {
           "annotations": [
-            "ZQMM_BARCODE_ANNO_MDL",
+            "ZQMM_C_EQ_BARCODE_UI2_VAN",
             "annotation"
           ],
           "localUri": "localService/mainService/metadata.xml",
           "odataVersion": "2.0"
         }
       },
-      "ZQMM_BARCODE_ANNO_MDL": {
-        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZQMM_BARCODE_ANNO_MDL',Version='0001')/$value/",
+      "ZQMM_C_EQ_BARCODE_UI2_VAN": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZQMM_C_EQ_BARCODE_UI2_VAN',Version='0001')/$value/",
         "type": "ODataAnnotation",
         "settings": {
-          "localUri": "localService/mainService/ZQMM_BARCODE_ANNO_MDL.xml"
+          "localUri": "localService/mainService/ZQMM_C_EQ_BARCODE_UI2_VAN.xml"
         }
       },
       "annotation": {
@@ -117,8 +117,8 @@
           "sap.suite.ui.generic.template.ListReport.view.ListReport": {
             "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ListReportExt",
             "sap.ui.generic.app": {
-              "zqmm_c_equipment_bc": {
-                "EntitySet": "zqmm_c_equipment_bc",
+              "ZQMM_C_EQ_Barcode": {
+                "EntitySet": "ZQMM_C_EQ_Barcode",
                 "Actions": {
                   "barcodeSearch": {
                     "id": "barcodeSearch",
@@ -139,8 +139,8 @@
           "sap.suite.ui.generic.template.ObjectPage.view.Details": {
             "controllerName": "ca.gc.agr.equipbcodelr.ext.controller.ObjectPageExt",
             "sap.ui.generic.app": {
-              "zqmm_c_equipment_bc": {
-                "EntitySet": "zqmm_c_equipment_bc",
+              "ZQMM_C_EQ_Barcode": {
+                "EntitySet": "ZQMM_C_EQ_Barcode",
                 "Header": {
                   "Actions": {
                     "EquipAudit": {
@@ -157,7 +157,7 @@
         },
         "sap.ui.viewExtensions": {
           "sap.suite.ui.generic.template.ListReport.view.ListReport": {
-            "BarcodeScanExt|zqmm_c_equipment_bc": {
+            "BarcodeScanExt|ZQMM_C_EQ_Barcode": {
               "className": "sap.ui.core.Fragment",
               "fragmentName": "ca.gc.agr.equipbcodelr.ext.fragments.BarcodeScanExt",
               "type": "XML"
@@ -176,8 +176,8 @@
       "showDraftToggle": false
     },
     "pages": {
-      "ListReport|zqmm_c_equipment_bc": {
-        "entitySet": "zqmm_c_equipment_bc",
+      "ListReport|ZQMM_C_EQ_Barcode": {
+        "entitySet": "ZQMM_C_EQ_Barcode",
         "component": {
           "name": "sap.suite.ui.generic.template.ListReport",
           "list": true,
@@ -218,8 +218,8 @@
           }
         },
         "pages": {
-          "ObjectPage|zqmm_c_equipment_bc": {
-            "entitySet": "zqmm_c_equipment_bc",
+          "ObjectPage|ZQMM_C_EQ_Barcode": {
+            "entitySet": "ZQMM_C_EQ_Barcode",
             "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
             "component": {
               "name": "sap.suite.ui.generic.template.ObjectPage",
